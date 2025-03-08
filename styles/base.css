@@ -1,4 +1,4 @@
-nav {
+header nav {
     display: flex;
     color: #ffffff;
     background-color: #373636;
@@ -6,16 +6,18 @@ nav {
     padding: 1em;
     position: absolute;
     bottom: 0%;
-    width: 100%;
+    width: 98%;
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
 }
 
-nav a {
+header nav a {
     color:#ececec;
     text-decoration: none;
     ;
 }
 
-nav a:hover {
+header nav a:hover {
     color: #ffffff;
     padding: .1em;
     background-color: #939090;
@@ -28,23 +30,31 @@ header {
     height: 150px;
     position: relative;
     width: 100%;
+    border-radius: 1.2em;
 }
 
 header h1 {
     color: #d9d6d6;
     display: block;
-    font-size: 1.5em;
+    font-size: 2em;
     align-self: start;
     padding: 1em;
 }
 
 body {
-    display: grid;
     color: #302f2f;
     background-color: #cecaca;
+    margin: 0;
 }
 
 .card {
+    display: grid;
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+}
+
+.card1 {
     display: grid;
     padding: 1em;
     justify-content: center;
@@ -58,27 +68,48 @@ footer h4 {
     grid-column: 1 / -1;
 }
 
-footer {
-    color: #d6d3d3;
-    background-color: #38537e;
-    width: 100%;
-    padding: 1em;
+main {
     display: grid;
-    height: 250px;
-}
-
-.center {
+    border-radius: 1.2em;
+    font-size: 1.2em;
     display: grid;
     grid-template-columns: 4fr 2fr;
-    font-size: .8em;
-    height: 200px;
+    height: 400px;
     gap: 1em;
     padding: 1em;
 }
 
-main {
+.card h2 {
+    grid-column: 1/-1;
+}
+
+.card1 h2 {
+    grid-column: 1/-1;
+}
+
+.card {
     display: grid;
-    background-color: #939090;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card img {
+    border-radius: 1.2em;
+    justify-content: right;
+    align-self: top;
+}
+
+.card1 img {
+    border-radius: 1.2em;
+}
+
+main img {
+    height: 70%;
+    justify-self: right;
 }
 
 main h2 {
@@ -87,13 +118,25 @@ main h2 {
     padding: .8em;
 }
 
-aside {
+aside nav {
     display: grid;
-    background-color: #ececec;
+    grid-template-rows: 1fr 1fr 1fr;
+
 }
 
-aside h3 {
+footer {
+    color: #d6d3d3;
+    background-color: #38537e;
+    width: 96%;
+    padding: 1em;
     display: grid;
-    align-self: start;
-    padding: .8em;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    border-radius: 1.2em;
+}
+
+footer p1 {
+    color: #ad7f7f;
 }
