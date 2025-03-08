@@ -12,7 +12,13 @@ nav {
 nav a {
     color:#ececec;
     text-decoration: none;
-    
+    ;
+}
+
+nav a:hover {
+    color: #ffffff;
+    padding: .1em;
+    background-color: #939090;
 }
 
 header {
