@@ -1,7 +1,7 @@
 nav {
     display: flex;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #373636;
     justify-content: space-around;
     padding: 1em;
     position: absolute;
@@ -19,11 +19,12 @@ nav a:hover {
     color: #ffffff;
     padding: .1em;
     background-color: #939090;
+    border-radius: .2em;
 }
 
 header {
     font-size: .8em;
-    background-color: #3e3e3e;
+    background-color: #38537e;
     height: 150px;
     position: relative;
     width: 100%;
@@ -31,7 +32,6 @@ header {
 
 header h1 {
     color: #d9d6d6;
-    background-color: #3e3e3e;
     display: block;
     font-size: 1.5em;
     align-self: start;
@@ -40,8 +40,15 @@ header h1 {
 
 body {
     display: grid;
-    color: #3e3e3e;
-    background-color: #beb9b9;
+    color: #302f2f;
+    background-color: #cecaca;
+}
+
+.card {
+    display: grid;
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
 }
 
 footer h4 {
@@ -52,11 +59,12 @@ footer h4 {
 }
 
 footer {
-    color: #beb9b9;
-    background-color: #3e3e3e;
+    color: #d6d3d3;
+    background-color: #38537e;
     width: 100%;
-    padding: 3em;
+    padding: 1em;
     display: grid;
+    height: 250px;
 }
 
 .center {
@@ -64,6 +72,8 @@ footer {
     grid-template-columns: 4fr 2fr;
     font-size: .8em;
     height: 200px;
+    gap: 1em;
+    padding: 1em;
 }
 
 main {
