@@ -2,6 +2,8 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: #20ca8c;
+    width: 100%;
+    padding: 1em 0;
 }
 
 nav {
@@ -46,7 +48,7 @@ main {
     padding: .2em;
 }
 
-main h1 {
+main h2 {
     display: grid;
     grid-column: 1 / -1;
 }
