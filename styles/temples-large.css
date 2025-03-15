@@ -1,12 +1,30 @@
+nav a {
+    display: flex;
+    padding: .8em;
+    color: #020705;
+    text-decoration: none;
+    justify-self: right;
+    font-size: 1.6em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a:hover {
+    color: #e02a85;
+}
+
 @media (max-width: 768px) {
     
     
     .menu-button {
-        display: none;
+        display: block;
     }
 
     nav {
-        display: flex;
+        display: none;
     }
 
     nav.open {
@@ -21,4 +39,14 @@
         height: auto;
     }
 
+}
+
+@media (min-width: 769px) {
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex; 
+    }
 }
