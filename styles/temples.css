@@ -34,11 +34,11 @@ nav a:hover {
     border: none;
     cursor: pointer;
     display: none;
-    transition: opacity 0.2s ease;
+    transition: opacity 1.3s ease;
 }
 
 .menu-button.hidden {
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 main {
