@@ -71,6 +71,7 @@
         padding: 1em;
         margin-top: auto;
         position: relative;
+        margin-bottom: 0;
     }
 
     .weather-icon {
