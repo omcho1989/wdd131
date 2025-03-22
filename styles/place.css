@@ -55,14 +55,19 @@ main {
 }
 
 .weather h1 {
-    color: var(--scotish-white)
+    color: var(--scotish-white);
+    text-align: right;
+    margin-left: -.9em;
 }
+
+
 
 .weather p {
     display: block;
     text-align: center;
     margin: 0;
-    color: var(--scotish-white)
+    color: var(--scotish-white);
+    padding: .5em;
 }
 
 picture {
@@ -81,9 +86,9 @@ picture img {
 }
 
 .weather-icon {
-    margin-left: 0.5em;
     width: 2em;
     height: auto;
+    justify-self: right;
 }
 
 
@@ -101,7 +106,7 @@ footer p {
     .data {
         text-align: center;
         position: relative;
-        max-width: 150px;
+        max-width: 180px;
         padding: 1em;  
         border-radius: 1.2em;
         background-color: var(--scotish-blue);  
@@ -121,7 +126,7 @@ footer p {
     .weather {
         text-align: center;
         position: relative;
-        max-width: 150px;
+        max-width: 180px;
         padding: 1em;
         max-height: 300px;
         border-radius: 1.2em;  
@@ -129,10 +134,19 @@ footer p {
     
     .weather h1 {
         display: flex;
-        text-align: center;
-        justify-content: center;
+        text-align: right;
+        justify-content: right;
         align-items: center;
         grid-column: 1/-1;
+        margin-left: .5em;
+    }
+
+    .weather h1::after {
+        content: url("images/weather-icon.svg"); 
+        display: flex;
+        width: 1.0em;
+        height: auto;
+        
     }
 
     .main_sections {
