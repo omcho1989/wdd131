@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Joseph Purkiss">
+    <meta name="description" content="Country Page">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-larger.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>~ Scotland ~</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 650px)">
+            <img src="images/hero-small.webp" alt="Hero Image" max-width="649" height="250">         
+        </picture>
+        <div class="main_sections">
+        <section class="data">
+            <h1>Data</h1>
+            <p>Area: 30,087 square miles</p>
+            <p>Population: 5,490,100</p>
+            <p>Capital: Edinburgh</p>
+            <p>Languages: English, Gaelic</p>
+            <p>Currency: pounds</p>
+            <p>Time Zone: GMT</p>
+            <p>Calling Code: +44</p>
+            <p>Internet TLD: .scot</p>
+        </section>
+        <section class="weather">
+            <h1>Weather <img class="weather-icon" src="images/weather.svg" alt="Weather Icon"></h1>
+            <p>Temperature: <span id="temperature">45</span> °F</p>
+            <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> 🏍️ Joseph Purkiss 🏍️ USA</p>
+        <p>Last Modified <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+:root {
+    --scotish-blue: #005EB8; /*scotish blue*/
+    --scotish-white: #FFFFFF; /*scotish white*/
+    --accent: #ede5b0;
+    --scottish-blue-trans: #005fb89a; /*see through for image*/
+}
+@media (min-width: 651px) {
+    .data {
+        position: absolute;
+        text-align: left;
+        padding: 1em;   
+        top: 10em; 
+        left: 5em;
+        border-radius: 1.2em;
+        background-color: var(--scottish-blue-trans);
+    }
+    
+    
+    .data h1 {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        height: 100%;
+        padding: 1em;
+    }
+    
+    .weather {
+        position: absolute;
+        bottom: 10em;
+        right: 5em;
+        text-align: right;
+        margin: 1em;
+        padding: 1em;
+        background-color: var(--scottish-blue-trans);
+        border-radius: 1.2em;
+    }
+
+    .weather p {
+        text-align: right;
+    }
+    
+    .weather h1 {
+        display: flex;
+        text-align: right;
+        justify-content: right;
+        align-items: right;
+        grid-column: 1/-1;
+    }
+
+    picture {
+        position: absolute;
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    main {
+        flex: 12;
+    }
+
+    footer {
+        background-color: var(--scotish-blue);
+        color: var(--scotish-white);
+        text-align: center;
+        padding: 1em;
+        margin-top: auto;
+        position: relative;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}

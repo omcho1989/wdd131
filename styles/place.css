@@ -1,0 +1,143 @@
+:root {
+    --scotish-blue: #005EB8; /*scotish blue*/
+    --scotish-white: #FFFFFF; /*scotish white*/
+    --accent: #ede5b0;
+    --scottish-blue-trans: #005fb850; /*see through for image*/
+}
+
+body {
+    background-color: var(--accent);
+}
+
+header {
+    background-color: var(--scotish-blue);
+}
+
+header h1 {
+    color: var(--scotish-white);
+    padding: .5em;
+    text-align: center;
+    font-size: 2.2em;
+    text-shadow: #000203;
+}
+
+main {
+    background-color: var(--accent);
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    position: relative;
+    padding: 1em;
+    max-width: 150px; 
+}
+
+.data h1 {
+    color: var(--scotish-white);
+}
+
+.data p {
+    color: var(--scotish-white)
+}
+
+.weather {
+    display: grid;
+    position: relative; 
+    background-color: var(--scotish-blue);
+    max-width: 150px; 
+    padding: 1em;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+}
+
+.weather h1 {
+    color: var(--scotish-white)
+}
+
+.weather p {
+    display: block;
+    text-align: center;
+    margin: 0;
+    color: var(--scotish-white)
+}
+
+picture {
+    width: 100%;
+    display: block;
+    grid-template-columns: 1 / -1;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.weather-icon {
+    margin-left: 0.5em;
+    width: 2em;
+    height: auto;
+}
+
+
+footer {
+    background-color: var(--scotish-blue);
+}
+
+footer p {
+    color: var(--scotish-white);
+    text-align: center;
+    padding: .2em;
+}
+
+@media (max-width: 649px) {
+    .data {
+        text-align: center;
+        position: relative;
+        max-width: 150px;
+        padding: 1em;  
+        border-radius: 1.2em;
+        background-color: var(--scotish-blue);  
+    }
+    
+    
+    .data h1 {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        padding: 1em;
+        width: 100px;
+    }
+    
+    .weather {
+        text-align: center;
+        position: relative;
+        max-width: 150px;
+        padding: 1em;
+        max-height: 300px;
+        border-radius: 1.2em;  
+    }
+    
+    .weather h1 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/-1;
+    }
+
+    .main_sections {
+        justify-items: center;
+        grid-row: 1fr 1fr;
+        row-gap: 1em;
+        max-height: fit-content;
+    }
+}
