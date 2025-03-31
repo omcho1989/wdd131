@@ -1,0 +1,10 @@
+@media (min-width: 769px) {
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row; 
+    }
+}
